@@ -23,6 +23,7 @@ public class Prob14 {
 				continue;
 			}
 			String[] split = scan.nextLine().split("\\,");
+			
 		}
 		scan.close();
 	}
