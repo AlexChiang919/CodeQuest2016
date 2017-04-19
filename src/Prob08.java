@@ -21,7 +21,7 @@ public class Prob08 {
 		int times = Integer.parseInt(scan.nextLine());
 		while (times-- > 0) {
 			int s = Integer.parseInt(scan.nextLine());
-			List<Song> songs = new ArrayList<>();
+			List<Song> songs = new ArrayList<Song>();
 			while (s-- > 0) {
 				String[] split = scan.nextLine().split(" \\- ");
 				songs.add(new Song(split[1], split[0]));

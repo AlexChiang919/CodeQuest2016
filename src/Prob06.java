@@ -20,8 +20,8 @@ public class Prob06 {
 		while (sets-- > 0) {
 			String school = scan.nextLine();
 			int students = Integer.parseInt(scan.nextLine());
-			HashMap<String, Double> gpa = new HashMap<>();
-			HashMap<String, Integer> hours = new HashMap<>();
+			HashMap<String, Double> gpa = new HashMap<String, Double>();
+			HashMap<String, Integer> hours = new HashMap<String, Integer>();
 			while (students-- > 0) {
 				String[] split = scan.nextLine().split("[\\:\\,]");
 				String student = split[0];

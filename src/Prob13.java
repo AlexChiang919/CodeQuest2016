@@ -25,8 +25,8 @@ public class Prob13 {
 			int[] digits = new int[split.length];
 			for (int i = 0; i < digits.length; i++)
 				digits[i] = Integer.parseInt(split[i]);
-			TreeSet<String> combos = new TreeSet<>();
-			List<Integer> current = new ArrayList<>();
+			TreeSet<String> combos = new TreeSet<String>();
+			List<Integer> current = new ArrayList<Integer>();
 			for (int i = 0; i < digits.length; i++) {
 				while (sum(current) != target) {
 					if (sum(current) > target) {

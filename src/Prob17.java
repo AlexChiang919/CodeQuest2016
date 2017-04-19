@@ -41,7 +41,7 @@ public class Prob17 {
 	private static int[][] d = { { -1, -1, 0, 0, 1, 1 }, { 0, 1, -1, 1, 0, 1 } };
 
 	public static int[][] bofus(int[][] honeycomb, int sr, int sc) {
-		Queue<Integer> q = new LinkedList<>();
+		Queue<Integer> q = new LinkedList<Integer>();
 		int[][] distance = new int[honeycomb.length][];
 		for (int i = 0; i < honeycomb.length; i++) {
 			distance[i] = new int[honeycomb[i].length];
