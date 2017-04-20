@@ -2,6 +2,21 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * <b><u>Problem 09</b>:</u> Navigating the World
+ * <p>
+ * <b>Java Program:</b> Prob09.java<br>
+ * <b>Input File:</b> Prob09.in.txt<br>
+ * <b>Status</b>: FINISHED
+ * <p>
+ * <b>Description:</b> Your company is working on a new mobile app, you have
+ * been asked to write the code that will convert a file containing a list of
+ * zoom levels and associated GPS coordinates into URLs to download the
+ * corresponding map tile from OpenStreetMap.
+ * 
+ * @author Alex Chiang
+ *
+ */
 public class Prob09 {
 
 	private static final String PROBLEM = "Prob09";

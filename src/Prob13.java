@@ -5,6 +5,18 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.TreeSet;
 
+/**
+ * <b><u>Problem 13</b>:</u> Communtative Combo!
+ * <p>
+ * <b>Java Program:</b> Prob13.java<br>
+ * <b>Input File:</b> Prob13.in.txt<br>
+ * <b>Status</b>: IN PROGRESS
+ * <p>
+ * <b>Description:</b> Just do it.
+ * 
+ * @author Alex Chiang
+ *
+ */
 public class Prob13 {
 
 	private static final String PROBLEM = "Prob13";

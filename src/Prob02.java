@@ -2,6 +2,20 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * <b><u>Problem 02</u>:</b>  Change for the World
+ * <p>
+ * <b>Java Program:</b> Prob02.java<br>
+ * <b>Input File:</b> Prob02.in.txt<br>
+ * <b>Status</b>: FINISHED
+ * <p>
+ * In order to strike the right balance of quirky and practical, you need to be
+ * able to pay for things using the fewest number of coins possible – and your
+ * program will help you do just that.
+ * 
+ * @author Alex Chiang
+ *
+ */
 public class Prob02 {
 
 	private static final String PROBLEM = "Prob02";

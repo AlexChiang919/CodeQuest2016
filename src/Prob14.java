@@ -2,6 +2,20 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * <b><u>Problem 14</b>:</u> Turkey
+ * <p>
+ * <b>Java Program:</b> Prob14.java<br>
+ * <b>Input File:</b> Prob14.in.txt<br>
+ * <b>Status</b>: IN PROGRESS
+ * <p>
+ * <b>Description:</b> This problem isn’t about Thanksgiving, it’s about
+ * bowling! If you’ve ever gone bowling, then you know that the scoring can be
+ * complicated. That’s why we want you to write a program to do it.
+ * 
+ * @author Alex Chiang
+ *
+ */
 public class Prob14 {
 
 	private static final String PROBLEM = "Prob14";
@@ -23,7 +37,7 @@ public class Prob14 {
 				continue;
 			}
 			String[] split = scan.nextLine().split("\\,");
-			
+
 		}
 		scan.close();
 	}

@@ -2,6 +2,18 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * <b><u>Problem 12</b>:</u> Message Integrity
+ * <p>
+ * <b>Java Program:</b> Prob12.java<br>
+ * <b>Input File:</b> Prob12.in.txt<br>
+ * <b>Status</b>: FINISHED
+ * <p>
+ * <b>Description:</b> Just do it.
+ * 
+ * @author Alex Chiang
+ *
+ */
 public class Prob12 {
 
 	private static final String PROBLEM = "Prob12";

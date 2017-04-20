@@ -2,6 +2,21 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * <b><u>Problem 07</b>:</u> Secret Message
+ * <p>
+ * <b>Java Program:</b> Prob07.java<br>
+ * <b>Input File:</b> Prob07.in.txt<br>
+ * <b>Status</b>: FINISHED
+ * <p>
+ * <b>Description:</b> You will be given a paragraph of text. Somewhere inside
+ * the text is an invisible message. Your task is to expose the message from
+ * this inconspicuous text by laying a cover message on top revealing the
+ * correct letters.
+ * 
+ * @author Alex Chiang
+ *
+ */
 public class Prob07 {
 
 	private static final String PROBLEM = "Prob07";

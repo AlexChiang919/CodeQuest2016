@@ -5,6 +5,26 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
+/**
+ * <b><u>Problem 17</b>:</u> Honeycomb
+ * <p>
+ * <b>Java Program:</b> Prob17.java<br>
+ * <b>Input File:</b> Prob17.in.txt<br>
+ * <b>Status</b>: IN PROGRESS
+ * <p>
+ * <b>Description:</b> In this problem, you are a honey bee. You are currently
+ * located at the top of the honeycomb triangle. You are supposed to leave soon
+ * to go gather pollen, but you left your pollen brush in the bottom right
+ * corner of the triangle. And you just remembered that your pollen bag is in
+ * the bottom left corner! You need to collect your things, and you need to do
+ * it quickly so you don’t get left behind. Since the door to the bee hive is
+ * just above the top of the honeycomb, you need to find the fastest route to go
+ * from the top of the honeycomb to the bottom right, then to the bottom left,
+ * and back to the top again.
+ * 
+ * @author Alex Chiang
+ *
+ */
 public class Prob17 {
 
 	private static final String PROBLEM = "Prob17";
@@ -29,7 +49,7 @@ public class Prob17 {
 					honeycomb[i][j] = Integer.parseInt(split[j]);
 				}
 			}
-			printLine(Arrays.deepToString(honeycomb));
+			// printLine(Arrays.deepToString(honeycomb));
 			int[][] distance = bofus(honeycomb, 0, 0);
 			int[][] distance1 = bofus(honeycomb, honeycomb.length - 1, 0);
 			int[][] distance2 = bofus(honeycomb, honeycomb.length - 1, honeycomb[honeycomb.length - 1].length - 1);

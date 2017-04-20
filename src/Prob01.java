@@ -2,6 +2,19 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * <b><u>Problem 01</b>:</u> I'm Board
+ * <p>
+ * <b>Java Program:</b> Prob01.java<br>
+ * <b>Input File:</b> Prob01.in.txt<br>
+ * <b>Status</b>: FINISHED
+ * <p>
+ * <b>Description:</b> Write a program which displays an N x N square board made using the pound
+ * sign (#).
+ * 
+ * @author Alex Chiang
+ *
+ */
 public class Prob01 {
 
 	private static final String PROBLEM = "Prob01";
@@ -27,7 +40,7 @@ public class Prob01 {
 		}
 		scan.close();
 	}
-	
+
 	private static String constructPounds(int pounds) {
 		String out = "";
 		for (int i = 0; i < pounds; i++) {
@@ -35,7 +48,7 @@ public class Prob01 {
 		}
 		return out.trim();
 	}
-	
+
 	private static void printArray(char[][] array) {
 		for (char[] ch : array) {
 			for (char c : ch) {

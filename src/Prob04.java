@@ -3,6 +3,23 @@ import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * <b><u>Problem 04</u>:</b> Anagram Checker
+ * <p>
+ * <b>Java Program:</b> Prob04.java<br>
+ * <b>Input File:</b> Prob04.in.txt<br>
+ * <b>Status</b>: FINISHED
+ * <p>
+ * <b>Description:</b> You have been hired by Anagrammy to create an anagram
+ * checker program that they can use to determine whether words submitted by
+ * their users are anagrams or not for the purposes of determining a monthly
+ * contest winner. Anagrammy only wants to check word anagrams in their anagram
+ * checker and not deal with phrases for their first release. Anagrammy needs
+ * your help in order to officially release their web site.
+ * 
+ * @author Alex Chiang
+ *
+ */
 public class Prob04 {
 
 	private static final String PROBLEM = "Prob04";
@@ -32,7 +49,7 @@ public class Prob04 {
 		}
 		scan.close();
 	}
-	
+
 	private static boolean equals(char[] a, char[] b) {
 		if (a.length != b.length)
 			return false;

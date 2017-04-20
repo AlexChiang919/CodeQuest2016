@@ -5,6 +5,19 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * <b><u>Problem 08</b>:</u> Muddled Music
+ * <p>
+ * <b>Java Program:</b> Prob08.java<br>
+ * <b>Input File:</b> Prob08.in.txt<br>
+ * <b>Status</b>: FINISHED
+ * <p>
+ * <b>Description:</b> Your task is to write a program that will read in a list
+ * of song – artist pairs and organize them.
+ * 
+ * @author Alex Chiang
+ *
+ */
 public class Prob08 {
 
 	private static final String PROBLEM = "Prob08";
@@ -32,24 +45,24 @@ public class Prob08 {
 		}
 		scan.close();
 	}
-	
+
 	public static class Song implements Comparable<Song> {
 		private String artist;
 		private String name;
-		
+
 		public Song(String artist, String name) {
 			this.artist = artist;
 			this.name = name;
 		}
-		
+
 		public String getArtist() {
 			return artist;
 		}
-		
+
 		public String getName() {
 			return name;
 		}
-		
+
 		@Override
 		public int compareTo(Song s) {
 			String oa = artist.startsWith("The ") ? artist.substring(4) : artist;
@@ -59,7 +72,7 @@ public class Prob08 {
 				return ca;
 			return name.toUpperCase().compareTo(s.name.toUpperCase());
 		}
-		
+
 		@Override
 		public String toString() {
 			return name + " - " + artist;

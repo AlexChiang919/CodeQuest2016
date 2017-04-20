@@ -2,6 +2,14 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * <b><u>Template Class</u></b>
+ * <p>
+ * <b>Description:</b> This is a template class for coding all problems.
+ * 
+ * @author Alex Chiang
+ *
+ */
 public class Template {
 
 	private static final String PROBLEM = "Prob00";

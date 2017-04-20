@@ -3,6 +3,19 @@ import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * <b><u>Problem 06</b>:</u> Who's the Valedictorian?
+ * <p>
+ * <b>Java Program:</b> Prob06.java<br>
+ * <b>Input File:</b> Prob06.in.txt<br>
+ * <b>Status</b>: FINISHED
+ * <p>
+ * <b>Description:</b> You have been entrusted to identify the valedictorian of
+ * each high school graduating class, based on GPA...
+ * 
+ * @author Alex Chiang
+ *
+ */
 public class Prob06 {
 
 	private static final String PROBLEM = "Prob06";
@@ -30,11 +43,19 @@ public class Prob06 {
 				for (int i = 1; i < split.length; i++) {
 					char[] ch = split[i].toCharArray();
 					int g = 0;
-					switch(ch[0]) {
-					case 'A': g = 4;break;
-					case 'B': g = 3; break;
-					case 'C': g = 2; break;
-					case 'D': g = 1; break;
+					switch (ch[0]) {
+					case 'A':
+						g = 4;
+						break;
+					case 'B':
+						g = 3;
+						break;
+					case 'C':
+						g = 2;
+						break;
+					case 'D':
+						g = 1;
+						break;
 					}
 					sum += g * Integer.parseInt("" + ch[1]);
 					hour += Integer.parseInt("" + ch[1]);

@@ -3,6 +3,24 @@ import java.io.FileNotFoundException;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
+/**
+ * <b><u>Problem 05</b>:</u> Mobile Miser
+ * <p>
+ * <b>Java Program:</b> Prob05.java<br>
+ * <b>Input File:</b> Prob05.in.txt<br>
+ * <b>Status</b>: FINISHED
+ * <p>
+ * <b>Description:</b> Your program will read a file with various bill amounts
+ * from fine dining restaurants and calculate the gratuity as a percentage of
+ * the bill. As is customary in U.S. restaurants, gratuity typically ranges from
+ * 15%-20% of the bill, so your program needs to calculate the gratuities at the
+ * 15%, 18% and 20% levels (rounding to the nearest cent using the CodeQuest
+ * rounding guidelines found in Appendix A) and display this in the output. You
+ * will get no points for claiming bad service and leaving a 0% tip on the bill!
+ * 
+ * @author Alex Chiang
+ *
+ */
 public class Prob05 {
 
 	private static final String PROBLEM = "Prob05";

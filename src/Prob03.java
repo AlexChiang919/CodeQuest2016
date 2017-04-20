@@ -3,6 +3,20 @@ import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * <b><u>Problem 03</u>:</b> What Triangle Is This?
+ * <p>
+ * <b>Java Program:</b> Prob03.java<br>
+ * <b>Input File:</b> Prob03.in.txt<br>
+ * <b>Status</b>: FINISHED
+ * <p>
+ * <b>Description:</b> That sounds easy enough, right? Your job is to write a program that can
+ * identify valid triangles. Not only do you need to determine if the three
+ * sides can form a triangle – you also have to tell what type it is.
+ * 
+ * @author Alex Chiang
+ *
+ */
 public class Prob03 {
 
 	private static final String PROBLEM = "Prob03";
@@ -34,7 +48,7 @@ public class Prob03 {
 		}
 		scan.close();
 	}
-	
+
 	private static long[] parseSides(String[] split) {
 		long[] array = new long[split.length];
 		for (int i = 0; i < split.length; i++) {
