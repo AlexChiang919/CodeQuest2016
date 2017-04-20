@@ -29,6 +29,7 @@ public class Prob17 {
 					honeycomb[i][j] = Integer.parseInt(split[j]);
 				}
 			}
+			printLine(Arrays.deepToString(honeycomb));
 			int[][] distance = bofus(honeycomb, 0, 0);
 			int[][] distance1 = bofus(honeycomb, honeycomb.length - 1, 0);
 			int[][] distance2 = bofus(honeycomb, honeycomb.length - 1, honeycomb[honeycomb.length - 1].length - 1);
@@ -38,7 +39,7 @@ public class Prob17 {
 		scan.close();
 	}
 
-	private static int[][] d = { { -1, -1, 0, 0, 1, 1 }, { 0, 1, -1, 1, 0, 1 } };
+	private static int[][] d = { { -1, -1, 0, 0, 1, 1 }, { -1, 0, -1, 1, 0, 1 } };
 
 	public static int[][] bofus(int[][] honeycomb, int sr, int sc) {
 		Queue<Integer> q = new LinkedList<Integer>();
@@ -65,6 +66,8 @@ public class Prob17 {
 				}
 			}
 		}
+		printLine(Arrays.deepToString(honeycomb));
+		printLine(Arrays.deepToString(distance));
 		return distance;
 	}
 
