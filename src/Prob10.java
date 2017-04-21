@@ -7,7 +7,7 @@ import java.util.Scanner;
  * <p>
  * <b>Java Program:</b> Prob10.java<br>
  * <b>Input File:</b> Prob10.in.txt<br>
- * <b>Status</b>: IN PROGRESS
+ * <b>Status</b>: FINISHED
  * <p>
  * <b>Description:</b> Just do it.
  * 
@@ -34,10 +34,33 @@ public class Prob10 {
 			int[] elevations = new int[times + 1];
 			for (int i = 0; i < times; i++) {
 				String[] split = scan.nextLine().split("\\,");
-				
+				altitudes[i] = Integer.parseInt(split[0]);
+				elevations[i + 1] = Integer.parseInt(split[1]);
+			}
+			for (int i = 0; i < times; i++) {
+				printLine(evaluate(altitudes, elevations, i));
 			}
 		}
 		scan.close();
+	}
+	
+	public static String evaluate(int[] altitudes, int[] elevations, int i) {
+		if (i == 0) {
+			if (altitudes[i] <= elevations[i + 1])
+				return "PULL UP!";
+			else if (altitudes[i] - 500 <= elevations[i])
+				return "Low Altitude!";
+			else
+				return "ok";
+		} else {
+			int delta = altitudes[i] - altitudes[i - 1];
+			if (altitudes[i] + delta <= elevations[i + 1])
+				return "PULL UP!";
+			else if (altitudes[i] - 500 <= elevations[i])
+				return "Low Altitude!";
+			else
+				return "ok";
+		}
 	}
 
 	public static void print(Object... o) {
