@@ -2,7 +2,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -77,13 +76,6 @@ public class Prob13 {
 				}
 			}
 		}
-	}
-	
-	public static int sum(List<Integer> numbers) {
-		int sum = 0;
-		for (int i : numbers)
-			sum += i;
-		return sum;
 	}
 
 	public static void print(Object... o) {
