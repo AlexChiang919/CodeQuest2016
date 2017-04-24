@@ -1,16 +1,16 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-import java.util.TreeSet;
 
 /**
  * <b><u>Problem 13</b>:</u> Communtative Combo!
  * <p>
  * <b>Java Program:</b> Prob13.java<br>
  * <b>Input File:</b> Prob13.in.txt<br>
- * <b>Status</b>: IN PROGRESS
+ * <b>Status</b>: FINISHED
  * <p>
  * <b>Description:</b> Just do it.
  * 
@@ -22,6 +22,11 @@ public class Prob13 {
 	private static final String PROBLEM = "Prob13";
 	private static final String EXT = ".in.txt";
 
+	private static int target;
+	private static int[] digits;
+	private static boolean[] used;
+	private static ArrayList<String> combos = new ArrayList<String>();
+	
 	public static void main(String[] args) {
 		Scanner scan;
 		try {
@@ -31,23 +36,47 @@ public class Prob13 {
 			return;
 		}
 		int times = Integer.parseInt(scan.nextLine());
-		while (times-- > 0) { 
+		while (times-- > 0) {
+			combos = new ArrayList<String>();
 			int target = Integer.parseInt(scan.nextLine().substring(9));
 			String[] split = scan.nextLine().split("\\,");
 			int[] digits = new int[split.length];
 			for (int i = 0; i < digits.length; i++)
 				digits[i] = Integer.parseInt(split[i]);
-			TreeSet<String> combos = new TreeSet<String>();
-			List<Integer> current = new ArrayList<Integer>();
+			Prob13.target = target;
+			Prob13.digits = digits;
+			used = new boolean[split.length];
+			Arrays.fill(used, false);
+			Arrays.sort(digits);
+			findSums(0, "");
+		}
+		scan.close();
+	}
+	
+	public static void findSums(int currentSum, String currentString) {
+		if (currentSum == target) {
+			if (!combos.contains(currentString)) {
+				combos.add(currentString);
+				printLine(currentString);
+			}
+			return;
+		} else {
 			for (int i = 0; i < digits.length; i++) {
-				while (sum(current) != target) {
-					if (sum(current) > target) {
-						current.remove(current.size() - 1);
+				if (!used[i]) {
+					if (currentSum + digits[i] <= target) {
+						used[i] = true;
+						String newString = currentString;
+						if (newString.length() > 0)
+							newString += "+";
+						newString += digits[i];
+						findSums(currentSum + digits[i], newString);
+						used[i] = false;
+					} else {
+						i = digits.length;
 					}
 				}
 			}
 		}
-		scan.close();
 	}
 	
 	public static int sum(List<Integer> numbers) {
